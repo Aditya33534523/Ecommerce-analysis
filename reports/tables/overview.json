@@ -1,0 +1,15 @@
+{
+  "rows": 25000,
+  "columns": 47,
+  "date_min": "2024-01-01",
+  "date_max": "2024-12-30",
+  "unique_customers": 8442,
+  "unique_products": 899,
+  "categories": 8,
+  "locations": 225,
+  "sessions": 25000,
+  "orders": 5616,
+  "overall_conversion_rate": 0.2246,
+  "cart_adds": 16117,
+  "cart_abandonment_rate": 0.6515
+}

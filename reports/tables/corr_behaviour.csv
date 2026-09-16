@@ -1,0 +1,8 @@
+index,purchased,added_to_cart,pages_viewed,time_on_site_sec,unit_price,quantity,discount_percent
+purchased,1.0,0.4,0.006,0.027,0.009,0.004,0.001
+added_to_cart,0.4,1.0,0.005,-0.004,0.003,0.001,0.007
+pages_viewed,0.006,0.005,1.0,0.01,-0.005,-0.005,-0.004
+time_on_site_sec,0.027,-0.004,0.01,1.0,0.002,0.006,0.007
+unit_price,0.009,0.003,-0.005,0.002,1.0,0.006,-0.003
+quantity,0.004,0.001,-0.005,0.006,0.006,1.0,-0.002
+discount_percent,0.001,0.007,-0.004,0.007,-0.003,-0.002,1.0

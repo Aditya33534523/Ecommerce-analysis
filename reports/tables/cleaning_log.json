@@ -1,0 +1,15 @@
+{
+  "decisions": [
+    "D1 kept source row numbers for full lineage/audit.",
+    "D2 dropped 0 exact duplicate rows (keep=first).",
+    "D3 quarantined 0 rows with unparseable visit_date (saved to processed/).",
+    "D4 parsed visit_date with explicit format '%d-%m-%Y' (verified vs visit_day/visit_month).",
+    "D5 enforced dtypes: ids/flags/counts int, money float, date datetime.",
+    "D6 quarantined 0 rows missing critical keys (session/date/customer/product).",
+    "D7 NO outlier removal: extreme unit_price/revenue values are plausible long-tail sales, flagged only (see data_quality_report.md).",
+    "D8 kept revenue=0 rows (they are non-purchases, not errors); revenue metrics computed on purchased=1 subset only.",
+    "D9 review columns (rating/review_text/review_helpful_votes) analysed only for purchased=1 rows; defaults for browsers are not real reviews.",
+    "D10 column names already snake_case; unchanged."
+  ],
+  "rows_out": 25000
+}

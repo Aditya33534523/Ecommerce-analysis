@@ -1,0 +1,7 @@
+channel_label,sessions,orders,net_revenue,avg_order_value,conversion_rate,revenue_share_pct
+Channel 0,4041,918,1661328.76,1809.73,0.23,16.42
+Channel 1,4190,927,1646768.68,1776.45,0.22,16.28
+Channel 2,4281,943,1711962.69,1815.44,0.22,16.92
+Channel 3,4116,932,1675463.47,1797.71,0.23,16.56
+Channel 4,4109,890,1599821.67,1797.55,0.22,15.81
+Channel 5,4263,1006,1820823.79,1809.96,0.24,18.0

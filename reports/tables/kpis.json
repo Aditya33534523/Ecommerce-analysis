@@ -1,0 +1,16 @@
+{
+  "total_sessions": 25000,
+  "total_orders": 5616,
+  "units_sold": 14027,
+  "gross_revenue": 11107779.58,
+  "total_discount_given": 991610.57,
+  "net_revenue": 10116169.06,
+  "discount_share_of_gross_pct": 8.93,
+  "aov": 1801.31,
+  "median_order_value": 1352.26,
+  "avg_unit_price_sold": 789.9,
+  "items_per_order": 2.5,
+  "conversion_rate_pct": 22.46,
+  "cart_abandonment_rate_pct": 65.15,
+  "revenue_per_session": 404.65
+}

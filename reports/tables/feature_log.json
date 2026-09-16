@@ -1,0 +1,20 @@
+{
+  "features_added": [
+    "gross_revenue",
+    "effective_price",
+    "funnel_stage",
+    "discount_band",
+    "price_band",
+    "year_month",
+    "quarter",
+    "month_name",
+    "is_weekend",
+    "review_valid",
+    "*_label decodes",
+    "weekday_name",
+    "season_name"
+  ],
+  "rows": 25000,
+  "cols": 47,
+  "revenue_mismatches": 0
+}

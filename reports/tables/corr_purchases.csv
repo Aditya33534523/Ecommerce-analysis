@@ -1,0 +1,8 @@
+index,unit_price,quantity,discount_percent,discount_amount,revenue,pages_viewed,time_on_site_sec
+unit_price,1.0,0.009,-0.015,0.389,0.748,0.004,0.019
+quantity,0.009,1.0,-0.004,0.287,0.558,0.003,0.011
+discount_percent,-0.015,-0.004,1.0,0.666,-0.137,-0.001,0.006
+discount_amount,0.389,0.287,0.666,1.0,0.371,0.001,0.007
+revenue,0.748,0.558,-0.137,0.371,1.0,0.001,0.022
+pages_viewed,0.004,0.003,-0.001,0.001,0.001,1.0,0.008
+time_on_site_sec,0.019,0.011,0.006,0.007,0.022,0.008,1.0
