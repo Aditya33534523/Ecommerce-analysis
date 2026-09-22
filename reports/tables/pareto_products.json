@@ -1,5 +1,9 @@
 {
   "top_20pct_entities": "product_id",
   "count": 180,
-  "revenue_share_pct": 35.75
+  "entities_total": 898,
+  "share_of_entities_pct": 20.04,
+  "revenue_share_pct": 35.75,
+  "entities_for_80pct_revenue": 549,
+  "share_of_entities_for_80pct": 61.14
 }

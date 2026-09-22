@@ -1,0 +1,57 @@
+variable,group,sessions,orders,conversion_pct,ci_low_pct,ci_high_pct
+channel,Channel 0,4041,918,22.72,21.45,24.03
+channel,Channel 1,4190,927,22.12,20.89,23.41
+channel,Channel 2,4281,943,22.03,20.81,23.29
+channel,Channel 3,4116,932,22.64,21.39,23.95
+channel,Channel 4,4109,890,21.66,20.43,22.95
+channel,Channel 5,4263,1006,23.6,22.35,24.9
+device,Device 0,9887,2221,22.46,21.65,23.3
+device,Device 1,12600,2812,22.32,21.6,23.05
+device,Device 2,2513,583,23.2,21.59,24.89
+discount band,0%,9964,2235,22.43,21.62,23.26
+discount band,1-10%,6301,1409,22.36,21.35,23.41
+discount band,11-20%,6310,1435,22.74,21.72,23.79
+discount band,21-30%,2425,537,22.14,20.54,23.84
+pages viewed (quartile),Q1: 1-7,7227,1598,22.11,21.17,23.08
+pages viewed (quartile),Q2: 8-13,6241,1391,22.29,21.27,23.34
+pages viewed (quartile),Q3: 14-19,6294,1442,22.91,21.89,23.97
+pages viewed (quartile),Q4: 20-24,5238,1185,22.62,21.51,23.78
+payment method,Payment 0,4227,895,21.17,19.97,22.43
+payment method,Payment 1,4281,980,22.89,21.66,24.17
+payment method,Payment 2,4051,940,23.2,21.93,24.53
+payment method,Payment 3,4140,949,22.92,21.67,24.23
+payment method,Payment 4,4229,939,22.2,20.98,23.48
+payment method,Payment 5,4072,913,22.42,21.17,23.73
+price band,Budget,6250,1422,22.75,21.73,23.81
+price band,Mid,6250,1369,21.9,20.9,22.95
+price band,High,6250,1354,21.66,20.66,22.7
+price band,Premium,6250,1471,23.54,22.5,24.6
+product category,Category 0,3142,700,22.28,20.86,23.77
+product category,Category 1,3043,647,21.26,19.84,22.75
+product category,Category 2,3237,721,22.27,20.87,23.74
+product category,Category 3,3040,631,20.76,19.35,22.23
+product category,Category 4,3204,727,22.69,21.27,24.17
+product category,Category 5,3149,728,23.12,21.68,24.62
+product category,Category 6,3112,768,24.68,23.2,26.22
+product category,Category 7,3073,694,22.58,21.14,24.1
+quantity,1,6277,1385,22.06,21.06,23.11
+quantity,2,6347,1443,22.74,21.72,23.78
+quantity,3,6249,1396,22.34,21.32,23.39
+quantity,4,6127,1392,22.72,21.69,23.79
+season,Winter (Dec-Feb),6275,1443,23.0,21.97,24.05
+season,Spring (Mar-May),6247,1384,22.15,21.14,23.2
+season,Summer (Jun-Aug),6269,1427,22.76,21.74,23.82
+season,Autumn (Sep-Nov),6209,1362,21.94,20.92,22.98
+time on site (quartile),Q1: 10-453,6270,1269,20.24,19.26,21.25
+time on site (quartile),Q2: 454-903,6236,1421,22.79,21.76,23.84
+time on site (quartile),Q3: 904-1355,6254,1477,23.62,22.58,24.69
+time on site (quartile),Q4: 1356-1799,6240,1449,23.22,22.19,24.29
+user type,User Type 0,11218,2081,18.55,17.84,19.28
+user type,User Type 1,13782,3535,25.65,24.93,26.39
+weekday,Mon,3616,823,22.76,21.42,24.16
+weekday,Tue,3587,841,23.45,22.09,24.86
+weekday,Wed,3524,808,22.93,21.57,24.35
+weekday,Thu,3630,820,22.59,21.26,23.98
+weekday,Fri,3687,828,22.46,21.14,23.83
+weekday,Sat,3489,756,21.67,20.33,23.07
+weekday,Sun,3467,740,21.34,20.01,22.74

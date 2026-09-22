@@ -1,0 +1,185 @@
+{
+  "note": "association only - observational, apparently synthetic data",
+  "alpha_bonferroni": 0.00385,
+  "n_variables_tested": 13,
+  "tests": {
+    "user type": {
+      "chi2": 178.52,
+      "dof": 1,
+      "p": 1.0205695243061237e-40,
+      "significant": true,
+      "nominal": true
+    },
+    "time on site (quartile)": {
+      "chi2": 25.02,
+      "dof": 3,
+      "p": 1.5312244203060495e-05,
+      "significant": true,
+      "nominal": true
+    },
+    "product category": {
+      "chi2": 17.4,
+      "dof": 7,
+      "p": 0.014996299882286845,
+      "significant": false,
+      "nominal": true
+    },
+    "price band": {
+      "chi2": 7.84,
+      "dof": 3,
+      "p": 0.04936897008979402,
+      "significant": false,
+      "nominal": true
+    },
+    "payment method": {
+      "chi2": 6.43,
+      "dof": 5,
+      "p": 0.26616555423051674,
+      "significant": false,
+      "nominal": false
+    },
+    "channel": {
+      "chi2": 5.65,
+      "dof": 5,
+      "p": 0.34217736254879466,
+      "significant": false,
+      "nominal": false
+    },
+    "weekday": {
+      "chi2": 6.4,
+      "dof": 6,
+      "p": 0.37973092028620065,
+      "significant": false,
+      "nominal": false
+    },
+    "season": {
+      "chi2": 2.68,
+      "dof": 3,
+      "p": 0.4438957669366086,
+      "significant": false,
+      "nominal": false
+    },
+    "device": {
+      "chi2": 0.94,
+      "dof": 2,
+      "p": 0.6263967348573749,
+      "significant": false,
+      "nominal": false
+    },
+    "pages viewed (quartile)": {
+      "chi2": 1.42,
+      "dof": 3,
+      "p": 0.7000110078324407,
+      "significant": false,
+      "nominal": false
+    },
+    "quantity": {
+      "chi2": 1.13,
+      "dof": 3,
+      "p": 0.770548896046405,
+      "significant": false,
+      "nominal": false
+    },
+    "location": {
+      "chi2": 202.04,
+      "dof": 224,
+      "p": 0.8512330134604277,
+      "significant": false,
+      "nominal": false
+    },
+    "discount band": {
+      "chi2": 0.47,
+      "dof": 3,
+      "p": 0.9263123009576333,
+      "significant": false,
+      "nominal": false
+    }
+  },
+  "discount_0_vs_11_20": {
+    "n_a": 9964,
+    "n_b": 6310,
+    "rate_a_pct": 22.43,
+    "rate_b_pct": 22.74,
+    "diff_pts": 0.31,
+    "ci_low_pts": -1.01,
+    "ci_high_pts": 1.63,
+    "p_value": 0.6437676970384174
+  },
+  "discount_mix": {
+    "0%": {
+      "avg_discount_pct": 0.0,
+      "avg_gross_order": 1992.34,
+      "avg_net_order": 1992.34,
+      "net_change_pct": 0.0
+    },
+    "1-10%": {
+      "avg_discount_pct": 8.05,
+      "avg_gross_order": 1999.36,
+      "avg_net_order": 1838.89,
+      "net_change_pct": -7.7
+    },
+    "11-20%": {
+      "avg_discount_pct": 17.03,
+      "avg_gross_order": 1958.26,
+      "avg_net_order": 1623.65,
+      "net_change_pct": -18.5
+    },
+    "21-30%": {
+      "avg_discount_pct": 27.71,
+      "avg_gross_order": 1913.81,
+      "avg_net_order": 1382.45,
+      "net_change_pct": -30.6
+    }
+  },
+  "revenue_per_session": {
+    "0%": {
+      "value": 446.9,
+      "change_vs_0pct": 0.0
+    },
+    "1-10%": {
+      "value": 411.2,
+      "change_vs_0pct": -8.0
+    },
+    "11-20%": {
+      "value": 369.24,
+      "change_vs_0pct": -17.4
+    },
+    "21-30%": {
+      "value": 306.13,
+      "change_vs_0pct": -31.5
+    }
+  },
+  "discount_assignment_min_p": 0.164,
+  "user_type": {
+    "higher": "User Type 1",
+    "lower": "User Type 0",
+    "conversion_higher_pct": 25.65,
+    "conversion_lower_pct": 18.55,
+    "conversion_gap": {
+      "n_a": 11218,
+      "n_b": 13782,
+      "rate_a_pct": 18.55,
+      "rate_b_pct": 25.65,
+      "diff_pts": 7.1,
+      "ci_low_pts": 6.07,
+      "ci_high_pts": 8.12,
+      "p_value": 0.0
+    },
+    "cart_rate_higher_pct": 64.31,
+    "cart_rate_lower_pct": 64.66,
+    "cart_to_purchase_higher_pct": 39.88,
+    "cart_to_purchase_lower_pct": 28.69,
+    "cart_to_purchase_gap": {
+      "n_a": 7254,
+      "n_b": 8863,
+      "rate_a_pct": 28.69,
+      "rate_b_pct": 39.88,
+      "diff_pts": 11.2,
+      "ci_low_pts": 9.74,
+      "ci_high_pts": 12.65,
+      "p_value": 0.0
+    },
+    "customers_seen_with_both_types": 5083,
+    "customers_total": 8442
+  }
+}

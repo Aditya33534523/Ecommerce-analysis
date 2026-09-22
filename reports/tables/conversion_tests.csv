@@ -1,0 +1,14 @@
+variable,levels,chi2,dof,p_value,significant_bonferroni,nominal_significant
+user type,2,178.52,1,1.0205695243061237e-40,True,True
+time on site (quartile),4,25.02,3,1.5312244203060495e-05,True,True
+product category,8,17.4,7,0.014996299882286845,False,True
+price band,4,7.84,3,0.04936897008979402,False,True
+payment method,6,6.43,5,0.26616555423051674,False,False
+channel,6,5.65,5,0.34217736254879466,False,False
+weekday,7,6.4,6,0.37973092028620065,False,False
+season,4,2.68,3,0.4438957669366086,False,False
+device,3,0.94,2,0.6263967348573749,False,False
+pages viewed (quartile),4,1.42,3,0.7000110078324407,False,False
+quantity,4,1.13,3,0.770548896046405,False,False
+location,225,202.04,224,0.8512330134604277,False,False
+discount band,4,0.47,3,0.9263123009576333,False,False

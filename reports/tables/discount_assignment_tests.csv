@@ -1,0 +1,13 @@
+variable,test,statistic,value
+channel,chi-square vs discount level,p-value,0.4034
+device,chi-square vs discount level,p-value,0.2407
+user type,chi-square vs discount level,p-value,0.6315
+product category,chi-square vs discount level,p-value,0.9618
+price band,chi-square vs discount level,p-value,0.9402
+weekday,chi-square vs discount level,p-value,0.4685
+season,chi-square vs discount level,p-value,0.6571
+payment method,chi-square vs discount level,p-value,0.1644
+unit_price,Pearson r with discount_percent,r,-0.0027
+quantity,Pearson r with discount_percent,r,-0.0018
+pages_viewed,Pearson r with discount_percent,r,-0.0037
+time_on_site_sec,Pearson r with discount_percent,r,0.0072

@@ -1,4 +1,4 @@
-device_label,sessions,orders,net_revenue,avg_order_value,conversion_rate,revenue_share_pct
-Device 0,9887,2221,4077146.03,1835.73,0.22,40.3
-Device 1,12600,2812,5006533.74,1780.42,0.22,49.49
-Device 2,2513,583,1032489.29,1770.99,0.23,10.21
+device_label,sessions,orders,net_revenue,avg_order_value,conversion_rate,revenue_share_pct,revenue_per_session
+Device 0,9887,2221,4077146.03,1835.73,0.2246,40.3,412.37
+Device 1,12600,2812,5006533.74,1780.42,0.2232,49.49,397.34
+Device 2,2513,583,1032489.29,1770.99,0.232,10.21,410.86

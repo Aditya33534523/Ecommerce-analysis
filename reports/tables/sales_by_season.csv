@@ -1,5 +1,5 @@
-season_name,sessions,orders,net_revenue,avg_order_value,conversion_rate,revenue_share_pct
-Autumn (Sep-Nov),6209,1362,2478326.67,1819.62,0.22,24.5
-Spring (Mar-May),6247,1384,2534160.27,1831.04,0.22,25.05
-Summer (Jun-Aug),6269,1427,2536656.73,1777.62,0.23,25.08
-Winter (Dec-Feb),6275,1443,2567025.39,1778.95,0.23,25.38
+season_name,sessions,orders,net_revenue,avg_order_value,conversion_rate,revenue_share_pct,revenue_per_session
+Autumn (Sep-Nov),6209,1362,2478326.67,1819.62,0.2194,24.5,399.15
+Spring (Mar-May),6247,1384,2534160.27,1831.04,0.2215,25.05,405.66
+Summer (Jun-Aug),6269,1427,2536656.73,1777.62,0.2276,25.08,404.63
+Winter (Dec-Feb),6275,1443,2567025.39,1778.95,0.23,25.38,409.09

@@ -1,6 +1,6 @@
-segment,customers,revenue,revenue_share_pct
-At-risk loyalists,482,1381344.87,13.65
-Champions,866,3116008.71,30.8
-Core,1120,2458208.49,24.3
-Hibernating,1188,2217375.73,21.92
-New / Low-frequency,520,943231.26,9.32
+segment,customers,revenue,revenue_share_pct,avg_recency_days,avg_orders,avg_revenue
+At-risk loyalists,244,937849.21,9.27,245.65,2.12,3843.64
+Champions,682,2782634.35,27.51,53.97,2.3,4080.11
+Core,827,1909176.47,18.87,154.31,1.34,2308.56
+Hibernating,1426,2660871.39,26.3,279.46,1.0,1865.97
+New / Low-frequency,997,1825637.64,18.05,60.46,1.0,1831.13

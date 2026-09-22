@@ -22,7 +22,7 @@
     {
       "check": "dtypes",
       "status": "PASS",
-      "detail": "{'customer_id': 'int64', 'session_id': 'int64', 'visit_date': 'str', 'device_type': 'int64', 'user_type': 'int64', 'marketing_channel': 'int64', 'product_id': 'int64', 'product_category': 'int64', 'unit_price': 'float64', 'quantity': 'int64', 'discount_percent': 'int64', 'discount_amount': 'float64', 'revenue': 'float64', 'pages_viewed': 'int64', 'time_on_site_sec': 'int64', 'added_to_cart': 'int64', 'purchased': 'int64', 'cart_abandoned': 'int64', 'rating': 'int64', 'review_text': 'int64', 'review_helpful_votes': 'int64', 'payment_method': 'int64', 'visit_day': 'int64', 'visit_month': 'int64', 'visit_weekday': 'int64', 'visit_season': 'int64', 'session_duration_bucket': 'str', 'revenue_normalized': 'float64', 'location': 'int64'}"
+      "detail": "{'customer_id': 'int64', 'session_id': 'int64', 'visit_date': 'object', 'device_type': 'int64', 'user_type': 'int64', 'marketing_channel': 'int64', 'product_id': 'int64', 'product_category': 'int64', 'unit_price': 'float64', 'quantity': 'int64', 'discount_percent': 'int64', 'discount_amount': 'float64', 'revenue': 'float64', 'pages_viewed': 'int64', 'time_on_site_sec': 'int64', 'added_to_cart': 'int64', 'purchased': 'int64', 'cart_abandoned': 'int64', 'rating': 'int64', 'review_text': 'int64', 'review_helpful_votes': 'int64', 'payment_method': 'int64', 'visit_day': 'int64', 'visit_month': 'int64', 'visit_weekday': 'int64', 'visit_season': 'int64', 'session_duration_bucket': 'object', 'revenue_normalized': 'float64', 'location': 'int64'}"
     },
     {
       "check": "duplicate_full_rows",
@@ -47,7 +47,7 @@
     {
       "check": "blank_strings",
       "status": "PASS",
-      "detail": "{}"
+      "detail": "{'visit_date': 0, 'session_duration_bucket': 0}"
     },
     {
       "check": "date_parse_all",
