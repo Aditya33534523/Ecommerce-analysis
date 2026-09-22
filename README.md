@@ -24,10 +24,10 @@ Operational e-commerce systems generate vast volumes of raw interaction logs. Ho
 | **Conversion Rate (CR)** | **22.46%** | 5,616 purchased sessions out of 25,000 total visits. |
 | **Cart Abandonment Rate** | **65.15%** | Primary funnel leak is between cart addition and final checkout. |
 | **Average Order Value (AOV)** | **$1,801.31** | Average items per order: 2.50. |
-| **Discount Elasticity** | **+1.0% CR lift** for **-18.5% AOV** | 11–20% discount band conversion (23.0%) vs. 0% discount (22.0%) showed near-zero lift while degrading AOV from $1,992 to $1,624. |
+| **Discount Elasticity** | **+0.31% CR lift** for **-18.5% AOV** | 11–20% discount band conversion (22.74%) vs. 0% discount (22.43%) showed near-zero lift (p-value 0.644) while degrading AOV from $1,992 to $1,624. |
 | **Pareto Concentration** | **Top 20% = 35.75% Rev** | Top 20% of products generate ~36% of net revenue; top 20% categories generate 39.23%. |
 | **Customer Retention** | **27.75% Repeat Rate** | 1,159 repeat purchasers out of 4,176 buyers; top-10 customers account for 1.25% of revenue. |
-| **Top Acquisition Channel** | **Channel 5 ($1.82M)** | Channel 5 produced highest net revenue and top conversion rate (24.0%). |
+| **Top Acquisition Channel** | **Channel 5 ($1.82M)** | Channel 5 produced highest net revenue and top conversion rate (23.6%). |
 
 ---
 
@@ -47,12 +47,13 @@ flowchart LR
 1. **`python/01_data_validation.py`**: Executes a 37-point programmatic audit checking primary key uniqueness, funnel consistency (`purchased ⇒ added_to_cart`), formula integrity, date sequencing, and non-purchaser review defaults.
 2. **`python/02_data_cleaning.py`**: Cleans and types data, creates consistent date representations, and exports validated baseline records.
 3. **`python/03_feature_engineering.py`**: Derives behavioral stage indicators, gross revenue, discount flags, seasonality tags, and standardized labels.
-4. **`python/04_exploratory_analysis.py`** & **`05_statistical_analysis.py`**: Computes parametric & non-parametric metrics (skewness, kurtosis, IQR) on commercial variables.
+4. **`python/04_exploratory_analysis.py`**, **`05_statistical_analysis.py`** & **`05b_hypothesis_tests.py`**: Computes parametric & non-parametric metrics (skewness, kurtosis, IQR) on commercial variables and performs hypothesis testing (Chi-square, A/B testing).
 5. **`python/06_sales_analysis.py`** & **`07_product_analysis.py`**: Calculates monthly run-rates, channel conversion, and product/category Pareto cumulative distributions.
 6. **`python/08_customer_analysis.py`**: Builds an **RFM (Recency, Frequency, Monetary)** quintile scoring model segmenting 4,176 buyers into 5 lifecycle clusters: *Champions, At-Risk Loyalists, Core, Hibernating, and New/Low-Frequency*.
 7. **`python/09_time_series_analysis.py`**: Evaluates 7-day rolling revenue averages and quarter-over-quarter momentum (peak Q3: $2.62M).
 8. **`python/10_visualization.py`** & **`11_report_automation.py`**: Generates 14 publication-grade figures and automated Markdown executive summaries.
 9. **`excel/build_excel_woorkbook.py`**: Programmatically generates a formatted multi-sheet Excel workbook with live formulas (`SUMIFS`, `COUNTIFS`, `XLOOKUP`), conditional formatting, and native charts.
+10. **`verify.py`**: Independent reconciliation script comparing pandas results against SQLite for headline metrics, top products, segment rules, and grouping integrity.
 
 ---
 
@@ -100,6 +101,7 @@ ecommerce-analytics-portfolio/
 │   ├── 03_feature_engineering.py            # Feature engineering
 │   ├── 04_exploratory_analysis.py           # Exploratory data analysis
 │   ├── 05_statistical_analysis.py           # Statistical summary & distribution tests
+│   ├── 05b_hypothesis_tests.py              # A/B testing and statistical significance tests
 │   ├── 06_sales_analysis.py                 # Sales & channel breakdown
 │   ├── 07_product_analysis.py               # Pareto 80/20 product & category analysis
 │   ├── 08_customer_analysis.py              # RFM segmentation & repeat behavior
@@ -120,6 +122,8 @@ ecommerce-analytics-portfolio/
 │   ├── 06_window_functions.sql              # Running totals, ranks, and lead/lag analyses
 │   ├── 07_time_series_analysis.sql          # Time series SQL aggregations
 │   └── run_query.py                         # SQL execution helper utility
+├── verify.py                                # Independent reconciliation check (pandas vs SQL)
+├── log.md                                   # Execution logs of all python and SQL scripts
 ├── .gitignore                               # Clean git ignore configuration
 ├── requirements.txt                         # Project dependencies
 └── README.md                                # Project documentation
