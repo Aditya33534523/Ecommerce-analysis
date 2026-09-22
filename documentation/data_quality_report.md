@@ -15,16 +15,16 @@
 ## Full check results
 
 | Check | Status | Detail |
-|-------|--------|--------|
-| rows  |  PASS  |  25000 |
-|columns|  PASS  |  29    |
-|column_names | PASS | ['customer_id', 'session_id', 'visit_date', 'device_type', 'user_type', 'marketing_channel', 'product_id', 'product_category', 'unit_price', 'quantity', 'discount_percent', 'discount_amount', 'revenue', 'pages_viewed', 'time_on_site_sec', 'added_to_cart', 'purchased', 'cart_abandoned', 'rating', 'review_text', 'review_helpful_votes', 'payment_method', 'visit_day', 'visit_month', 'visit_weekday', 'visit_season', 'session_duration_bucket', 'revenue_normalized', 'location'] |
-| dtypes | PASS | {'customer_id': 'int64', 'session_id': 'int64', 'visit_date': 'str', 'device_type': 'int64', 'user_type': 'int64', 'marketing_channel': 'int64', 'product_id': 'int64', 'product_category': 'int64', 'unit_price': 'float64', 'quantity': 'int64', 'discount_percent': 'int64', 'discount_amount': 'float64', 'revenue': 'float64', 'pages_viewed': 'int64', 'time_on_site_sec': 'int64', 'added_to_cart': 'int64', 'purchased': 'int64', 'cart_abandoned': 'int64', 'rating': 'int64', 'review_text': 'int64', 'review_helpful_votes': 'int64', 'payment_method': 'int64', 'visit_day': 'int64', 'visit_month': 'int64', 'visit_weekday': 'int64', 'visit_season': 'int64', 'session_duration_bucket': 'str', 'revenue_normalized': 'float64', 'location': 'int64'} |
+|---|---|---|
+| rows | PASS | 25000 |
+| columns | PASS | 29 |
+| column_names | PASS | ['customer_id', 'session_id', 'visit_date', 'device_type', 'user_type', 'marketing_channel', 'product_id', 'product_category', 'unit_price', 'quantity', 'discount_percent', 'discount_amount', 'revenue', 'pages_viewed', 'time_on_site_sec', 'added_to_cart', 'purchased', 'cart_abandoned', 'rating', 'review_text', 'review_helpful_votes', 'payment_method', 'visit_day', 'visit_month', 'visit_weekday', 'visit_season', 'session_duration_bucket', 'revenue_normalized', 'location'] |
+| dtypes | PASS | {'customer_id': 'int64', 'session_id': 'int64', 'visit_date': 'object', 'device_type': 'int64', 'user_type': 'int64', 'marketing_channel': 'int64', 'product_id': 'int64', 'product_category': 'int64', 'unit_price': 'float64', 'quantity': 'int64', 'discount_percent': 'int64', 'discount_amount': 'float64', 'revenue': 'float64', 'pages_viewed': 'int64', 'time_on_site_sec': 'int64', 'added_to_cart': 'int64', 'purchased': 'int64', 'cart_abandoned': 'int64', 'rating': 'int64', 'review_text': 'int64', 'review_helpful_votes': 'int64', 'payment_method': 'int64', 'visit_day': 'int64', 'visit_month': 'int64', 'visit_weekday': 'int64', 'visit_season': 'int64', 'session_duration_bucket': 'object', 'revenue_normalized': 'float64', 'location': 'int64'} |
 | duplicate_full_rows | PASS | 0 exact duplicate rows |
 | duplicate_session_id | PASS | 0 duplicated session ids |
 | session_id_is_sequential_pk | PASS | min=0, max=24999, unique=True |
 | missing_values | PASS | none |
-| blank_strings | PASS | {} |
+| blank_strings | PASS | {'visit_date': 0, 'session_duration_bucket': 0} |
 | date_parse_all | PASS | 0 unparseable |
 | date_range | PASS | 2024-01-01 → 2024-12-30 |
 | no_future_dates | PASS | all in the past |
