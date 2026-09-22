@@ -28,15 +28,15 @@
 - Top products by revenue: P130, P292, P806, P49, P453.
 
 ## Channels & customers
-- Strongest channel by revenue: **Channel 5** (1,820,824; conversion 24.0%)
-- Weakest channel: **Channel 4** (conversion 22.0%)
+- Strongest channel by revenue: **Channel 5** (1,820,824; conversion 23.6%)
+- Weakest channel: **Channel 4** (conversion 21.7%)
 - Repeat purchasers: 1159 of 4176 (27.75%);
   top-10 customers hold 1.25% of customer revenue.
-- RFM segments: At-risk loyalists (482), Champions (866), Core (1120), Hibernating (1188), New / Low-frequency (520).
+- RFM segments: At-risk loyalists (244), Champions (682), Core (827), Hibernating (1426), New / Low-frequency (997).
 
 ## Discount & engagement observations (associations, not causal claims)
-- Conversion in the **11-20%** discount band is 23.0%
-  vs 22.0% with **no discount**; AOV 1,624 vs 1,992.
+- Conversion in the **11-20%** discount band is 22.7%
+  vs 22.4% with **no discount**; AOV 1,624 vs 1,992.
 - Correlation of purchase flag with pages_viewed: 0.01;
   with time_on_site: 0.03;
   with discount_percent: 0.00.
