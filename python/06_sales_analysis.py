@@ -31,7 +31,11 @@ def seg(col, fname):
                                  if df.loc[s.index, "purchased"].sum() else np.nan)))
     t["conversion_rate"] = (t.orders / t.sessions).round(4)
     t["revenue_share_pct"] = (100 * t.net_revenue / pur.revenue.sum()).round(2)
-    save_table(t.round(2).reset_index(), fname)
+    t["revenue_per_session"] = (t.net_revenue / t.sessions).round(2)
+    # Round ONLY the money columns. conversion_rate is a fraction: t.round(2) would collapse every
+    # rate to a whole percentage point (0.2274 -> 0.23) and invent gaps between groups.
+    save_table(t.round({"net_revenue": 2, "avg_order_value": 2, "revenue_share_pct": 2,
+                        "revenue_per_session": 2}).reset_index(), fname)
     return t
 
 for col, f in [("channel_label", "sales_by_channel.csv"), ("device_label", "sales_by_device.csv"),
@@ -51,8 +55,13 @@ for by, f in [("product_id", "pareto_products.csv"), ("category_label", "pareto_
     p = (pur.groupby(by).revenue.sum().sort_values(ascending=False).to_frame("net_revenue"))
     p["cum_share_pct"] = (100 * p.net_revenue.cumsum() / p.net_revenue.sum()).round(2)
     top20_n = max(1, int(np.ceil(0.2 * len(p))))
-    save_json({"top_20pct_entities": by, "count": top20_n,
-               "revenue_share_pct": round(float(p.cum_share_pct.iloc[top20_n - 1]), 2)},
+    n80 = int((p.cum_share_pct < 80).sum()) + 1
+    save_json({"top_20pct_entities": by, "count": top20_n, "entities_total": int(len(p)),
+               # ceil() means "top 20%" of 8 categories is 2 categories = 25% of them; report the real share
+               "share_of_entities_pct": round(100 * top20_n / len(p), 2),
+               "revenue_share_pct": round(float(p.cum_share_pct.iloc[top20_n - 1]), 2),
+               "entities_for_80pct_revenue": n80,
+               "share_of_entities_for_80pct": round(100 * n80 / len(p), 2)},
               f.replace(".csv", ".json"))
     save_table(p.reset_index(), f)
 
